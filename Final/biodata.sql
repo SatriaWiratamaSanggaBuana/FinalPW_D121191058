@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2021 at 02:09 AM
--- Server version: 10.4.8-MariaDB
--- PHP Version: 7.3.11
+-- Generation Time: Jun 05, 2021 at 09:19 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -29,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `biodata` (
+  `id` int(11) NOT NULL,
   `Nama` varchar(100) NOT NULL,
   `NIM` varchar(100) NOT NULL,
   `Jurusan` varchar(100) NOT NULL,
@@ -39,10 +39,12 @@ CREATE TABLE `biodata` (
 -- Dumping data for table `biodata`
 --
 
-INSERT INTO `biodata` (`Nama`, `NIM`, `Jurusan`, `Alamat`) VALUES
-('Satria', 'D121191058', 'Teknik Informatika', 'Makassar'),
-('Khaedar Syaifullah', 'D121191089', 'Teknik Informatika', 'Maros'),
-('Leonic', 'D121191089', 'Teknik Informatika', 'Kolaka');
+INSERT INTO `biodata` (`id`, `Nama`, `NIM`, `Jurusan`, `Alamat`) VALUES
+(1, 'Satria', 'D121191058', 'Teknik Informatika', 'Makassar'),
+(2, 'Khaedar Syaifullah', 'D121191089', 'Teknik Informatika', 'Maros'),
+(3, 'Leonic', 'D121191089', 'Teknik Informatika', 'Kolaka'),
+(4, 'farhan', 'D121191080', 'Teknik Informatika', 'Jayapura'),
+(5, 'Ijlal', 'D121191068', 'Teknik Informatika', 'Luwu');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
